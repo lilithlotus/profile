@@ -1,0 +1,229 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half,
+.one-two-three {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .one-two-three {
+    width: calc(100% / 2)
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .one-two-three {
+    width: calc(100% / 3);
+  }
+  .column {
+    float: left;
+  }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+    background-color: rgb(70,162,159);
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover {
+    background-color: rgba(255,255,255,.5);
+  color: rgb(69,90,117);
+}
+
+.home_zero {
+  background-color: rgb(249,191,0);
+  height: 600px;
+  position: relative;
+}
+
+.home_text {
+  position: absolute;
+  bottom: 0;
+  color: rgb(255,255,255);
+  font-size: 2.5em;
+  padding-left: .8em;
+  padding-bottom: .5em;
+}
+
+.home_one {
+  background-image: url(http://i.imgur.com/TKIG59T.jpg);
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+.circle {
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  background: rgb(70,162,159);
+  padding-top: 75px;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.name {
+  text-align: center;
+  color: rgb(255,255,255);
+  font-size: 3.5em;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about {
+  background-color: rgb(194,90,76);
+}
+
+.section_heading {
+  color: rgb(255,255,255);
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.about_text {
+  color: rgb(255,255,255);
+  font-size: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#sentence_one {
+  font-size: 2em;
+}
+
+.image_zero {
+  width: 80%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  padding: 2em;
+}
+
+.portfolio {
+  background-color: rgb(76,73,78);
+}
+
+.placeholder {
+  display: block;
+  margin: auto;
+  width: 77%;
+  margin-bottom: 2em;
+}
+
+.connect {
+  height: 600px;
+  background-color: rgb(249,191,0);
+  background-size: cover;
+  position: relative;
+}
+
+@media only screen and (min-width: 800px) {
+  .connect {
+    background-image: url(http://i.imgur.com/x0sYb6Z.jpg);
+  }
+}
+
+.connect_head {
+  font-size: 2em;
+  font-family: 'Fredericka the Great', serif;
+  padding-top: 40px;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.connect_text {
+  font-size: 1.5em;
+  font-family: 'Fredericka the Great', serif;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.icons {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.icon {
+  height: 20%;
+  max-height: 60px;
+  width: 20%;
+  max-width: 60px;
+  margin: .3em;
+}
+
+.position {
+  position: relative;
+}
